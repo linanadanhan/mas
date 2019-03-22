@@ -1,0 +1,24 @@
+<template>
+  <form-item :config="config" :model="model" :rules="rules" :context="context" :rindex="rindex" :cindex="cindex" :rows="rows">
+    <el-input v-model="model[config.name]" v-bind='config' :type="config.componentType"></el-input>
+  </form-item>
+</template>
+
+<script>
+  import FormItem from '../pages/FormItem.vue'
+  export default {
+		components: { 
+			'form-item': FormItem
+		},
+    props: ['page', 'params', 'widget','config', 'model','rules', 'context', 'rindex', 'cindex', 'rows'],
+    data () {
+      return {
+      }
+    },
+    methods: {
+    }
+  }
+</script>
+
+<style>
+</style>

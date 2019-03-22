@@ -1,0 +1,106 @@
+import Mock from 'mockjs'
+
+Mock.mock(/site\/getCategoryWidgetTree/, {
+  'status': 200,
+  'data': [{
+    'parent': '0',
+    'children': [],
+    'category': ''
+  }, {
+    'parent': '0',
+    'children': [{
+      'parent': 'DAS',
+      'children': [],
+      'category': '图表展现'
+    }, {
+      'parent': 'DAS',
+      'children': [],
+      'category': '图表管理'
+    }, {
+      'parent': 'DAS',
+      'children': [],
+      'category': '数据分析'
+    }],
+    'category': 'DAS'
+  }, {
+    'parent': '0',
+    'children': [],
+    'category': '一体化'
+  }, {
+    'parent': '0',
+    'children': [],
+    'category': '公文'
+  }, {
+    'parent': '0',
+    'children': [],
+    'category': '基础组件'
+  }, {
+    'parent': '0',
+    'children': [{
+      'parent': '工作流',
+      'children': [],
+      'category': '流程流转'
+    }, {
+      'parent': '工作流',
+      'children': [],
+      'category': '流程管理'
+    }, {
+      'parent': '工作流',
+      'children': [],
+      'category': '表达式'
+    }],
+    'category': '工作流'
+  }, {
+    'parent': '0',
+    'children': [{
+      'parent': '应用工厂',
+      'children': [],
+      'category': '树设计'
+    }, {
+      'parent': '应用工厂',
+      'children': [],
+      'category': '树预览'
+    }, {
+      'parent': '应用工厂',
+      'children': [],
+      'category': '模版管理'
+    }, {
+      'parent': '应用工厂',
+      'children': [],
+      'category': '表单设计'
+    }, {
+      'parent': '应用工厂',
+      'children': [],
+      'category': '表单预览'
+    }, {
+      'parent': '应用工厂',
+      'children': [],
+      'category': '表格设计'
+    }, {
+      'parent': '应用工厂',
+      'children': [],
+      'category': '表格预览'
+    }],
+    'category': '应用工厂'
+  }, {
+    'parent': '0',
+    'children': [],
+    'category': '电子邮件'
+  }, {
+    'parent': '0',
+    'children': [],
+    'category': '统一待办'
+  }, {
+    'parent': '0',
+    'children': [],
+    'category': '通知公告'
+  }, {
+    'parent': '0',
+    'children': [{
+      'parent': '基础分类',
+      'children': [],
+      'category': '办公用品管理'
+    }],
+    'category': '基础分类'
+  }]
+})
